@@ -5,6 +5,14 @@ AOS.init({
 });
 </script>
 
+
+<script>
+  $(window).on('load', function (){
+    $('#loading').hide();
+  }) 
+</script>
+
+
 <script type="text/javascript">
 // List of sentences
 var _CONTENT = [ "YOUR ONLINE LOAN TO ACHIEVE YOUR GOALS","GET THE FINANCIAL SPPORT YOU NEED", "YOUR FINANCIAL SOLUTION AWAITS!"];

@@ -20,7 +20,9 @@
 <body>
 
 <?php include 'alert.php'?>
-
+<div id="loading">
+    <img id="loading-image" src="<?php echo $website_url?>/all-images/images/loader.gif" alt="animated zoomIn"/> 
+</div>
     <div class="body-container">
         <div class="inner-div">
             <?php include 'header.php'?>
