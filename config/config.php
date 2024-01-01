@@ -12,12 +12,12 @@ $sysname=gethostname();//computer used
 
 $thename='PrimeBase'; 
 $website_auto_url =(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$website_url='http://localhost/prime-based-loan-app';
+$website_url='http://localhost/prime-base-loan-app';
 
 ?>
 
 <script>
-    var website_url='http://localhost/prime-based-loan-app'; /// website url
+    var website_url='http://localhost/prime-base-loan-app'; /// website url
     var index_local_url=website_url+"/config/code";	/// For index local_url //
 </script>
 

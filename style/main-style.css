@@ -104,11 +104,10 @@ header .header-div-in ul .active{
 
 /* CSS BODY SECTION */
 .body-div{
-	position: relative;
+	position: absolute;
 	width: 100%;
-	top: 12%;
+	bottom: 0px;
 	height: calc(100% - 70px);
-
 }
 
 .right-div{
@@ -132,14 +131,13 @@ header .header-div-in ul .active{
 }
 
 .left-div .inner{
-	padding: 150px 50px;
-	height: 100% - 100px;
+	padding: 110px 50px;
 }
 
 .left-div .inner h1{
 	padding: 0px;
 	margin: 0px;
-	font-size: 35px;
+	font-size: 33px;
 	min-height: 100px;
 	line-height: 45px;
 	color: #424242;
@@ -171,11 +169,13 @@ header .header-div-in ul .active{
 }
 
 .left-div .footer-div .text{
-	font-size: 12px;
+	min-height: 50px;
+	font-size: 11px;
 	text-align: center;
-	line-height: 40px;
-	color: #353535;
+	line-height: 50px;
+	color: #3f3f3f;
 }
+
 
 /* CSS FORM SECTION */
 .slide-form-container {

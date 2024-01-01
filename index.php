@@ -5,23 +5,23 @@
 <?php include 'meta.php'?>
 <title><?php echo $thename?> | Micro Finance Loan Lending Company</title>
 <meta name="keywords" content="Loan app, Personal loans, Quick loans, Instant approval, Online lending, Borrow money, Financial assistance, Credit score, Loan calculator, Microfinance, Peer-to-peer lending, Emergency funds, Installment loans, Cash advance, Loan application, Loan approval" />
-<meta name="description" content="Other Description goes here"/>
+<meta name="description" content="Discover the easiest way to secure loans with our innovative loan app. Fast approval, competitive rates, and a seamless user experience. Apply now and get the financial support you need.">
 
-<meta property="og:title" content="<?php echo $thename?> |  Other Title goes here" />
-<meta property="og:image" content="<?php echo $website_url?>/all-images/plugin-pix/connect-global-logistics.jpg"/>
-<meta property="og:description" content="Other Description goes here"/>
+<meta property="og:title" content="<?php echo $thename?> |  Loan app, Personal loans, Quick loans, Instant approval, Online lending, Borrow money, Financial assistance, Credit score, Loan calculator, Microfinance, Peer-to-peer lending, Emergency funds, Installment loans, Cash advance, Loan application, Loan approval" />
+<meta property="og:image" content="<?php echo $website_url?>/"/>
+<meta property="og:description" content="Discover the easiest way to secure loans with our innovative loan app. Fast approval, competitive rates, and a seamless user experience. Apply now and get the financial support you need."/>
 
-<meta name="twitter:title" content="<?php echo $thename?> |  Other Title goes here"/> 
+<meta name="twitter:title" content="<?php echo $thename?> |  Loan app, Personal loans, Quick loans, Instant approval, Online lending, Borrow money, Financial assistance, Credit score, Loan calculator, Microfinance, Peer-to-peer lending, Emergency funds, Installment loans, Cash advance, Loan application, Loan approval"/> 
 <meta name="twitter:card" content="<?php echo $thename?>"/> 
-<meta name="twitter:image"  content="<?php echo $website_url?>/all-images/plugin-pix/connect-global-logistics.jpg"/> 
-<meta name="twitter:description" content="Other Description goes here"/>
+<meta name="twitter:image"  content="<?php echo $website_url?>/"/> 
+<meta name="twitter:description" content="Discover the easiest way to secure loans with our innovative loan app. Fast approval, competitive rates, and a seamless user experience. Apply now and get the financial support you need."/>
 
 </head>
 <body>
 
 <?php include 'alert.php'?>
 <div id="loading">
-    <img id="loading-image" src="<?php echo $website_url?>/all-images/images/loader.gif" alt="animated zoomIn"/> 
+    <img id="loading-image" src="<?php echo $website_url?>/all-images/images/loader.gif" alt="Loading..."/> 
 </div>
     <div class="body-container">
         <div class="inner-div">

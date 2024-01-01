@@ -6,6 +6,7 @@
     <div class="left-div">
         <div class="inner animated fadeIn">
             <h1><span id="page-title">YOUR ONLINE LOAN TO ACHIEVE YOUR GOALS</span></h1>
+            <p>Our streamlined system ensures that you can apply for your loan from the comfort of your home at any time that suits you.</p>
             <P>Get your loan in minutes in with easy online application process.</P>
             <div class="icon"><img src="<?php echo $website_url?>/all-images/images/facebook.png" alt="facebook"/></div>
             <div class="icon"><img src="<?php echo $website_url?>/all-images/images/instagram.png" alt="facebook"/></div>
@@ -17,6 +18,56 @@
             <div class="text">© 2022 - 2023  PrimeBase. All Rights Reserved.
         </div>
     </div>
+    <script type="text/javascript">
+// List of sentences
+var _CONTENT = [ "YOUR ONLINE LOAN TO ACHIEVE YOUR GOALS","GET THE FINANCIAL SPPORT YOU NEED", "YOUR FINANCIAL SOLUTION AWAITS!"];
+// Current sentence being processed
+var _PART = 0;
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+// Element that holds the text
+var _ELEMENT = document.querySelector("#page-title");
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 2);
+		}, 5000);
+	}
+}
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 50);
+		}, 100);
+	}
+}
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 50);
+</script>
+
 <?php } ?>
 
 
@@ -50,7 +101,7 @@
 <?php } ?>
 
 
-<?php if ($page=='view_loan_request'){ ?>
+<?php if ($page=='view-loan-request'){ ?>
     <div class="loan-request-back-div sb-container">
         <div class="div-in">
             <div class="scroll-div">   
@@ -85,7 +136,7 @@
 <?php } ?>
 
 
-<?php if ($page=='repayment_schedule'){ ?>
+<?php if ($page=='repayment-schedule'){ ?>
     <div class="loan-request-back-div sb-container">
         <div class="div-in">
             <div class="scroll-div">   

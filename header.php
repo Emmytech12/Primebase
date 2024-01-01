@@ -1,5 +1,4 @@
 
-
 <header> 
     <div class="header-div-in">
         <div class="logo-div">
@@ -7,22 +6,10 @@
         </div>
 
         <ul data-aos="fade-right" data-aos-duration="1000">                          
-            <li><a href="#" onClick="_get_page('home')" title="Home Page"><li>HOME</a></li>        
-            <li><a href="#" id="loan-request-link" title="Request for Loan">REQUEST FOR LOAN</a></li>  
-            <li><a href="#" onClick="_get_page('view_loan_request')" title="View Loan Request"><li>VIEW LOAN REQUEST</a></li>                                                        
-            <li><a href="#" id="repayment-schedule-link" title="Repayment Schedule">REPAYMENT SCHEDULE</a></li>  
+            <a href="#" title="Home Page"><li onClick="_get_page('home');" id="dashboard">HOME</li></a>        
+            <a href="#" title="Request for Loan"><li onClick="_get_form('loan-request');"c>REQUEST FOR LOAN</li></a>  
+            <a href="#" title="View Loan Request"><li onClick="_get_page('view-loan-request');">VIEW LOAN REQUEST</li></a>                                                        
+            <a href="#" title="Repayment Schedule"><li onClick="_get_form('loan-repayment');">REPAYMENT SCHEDULE</li></a>  
         </ul>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('loan-request-link').addEventListener('click', function() {
-            _get_form('loan-request');
-        });
-        document.getElementById('repayment-schedule-link').addEventListener('click', function() {
-            _get_form_with_id('loan-repayment','<?php echo $ids?>');
-        });
-        
-    });
-    </script>
 </header>

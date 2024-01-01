@@ -90,21 +90,6 @@ function _get_form(page) {
 	  },
 	});
 }
-  
-function _get_form_with_id(page, ids) {
-	$("#get-more-div").html('<div class="ajax-loader"><img src="'+website_url+'/all-images/images/ajax-loader.gif"/></div>').fadeIn(500);
-	var action = "get_form_with_id";
-	var dataString = "action=" + action + "&page=" + page + "&ids=" + ids;
-	$.ajax({
-	  type: "POST",
-	  url: index_local_url,
-	  data: dataString,
-	  cache: false,
-	  success: function (html) {
-		$("#get-more-div").html(html);
-	  },
-	});
-}
 
 
 function _get_page(page) {
@@ -186,7 +171,7 @@ function _get_page_with_id(page, ids) {
 			if (result == true) {
 				$("#success-div").html('<div><i class="bi-check"></i></div> ' + message +" <br>" ).fadeIn(500).delay(5000).fadeOut(100);
 				_alert_close();
-				_get_page('view_loan_request');
+				_get_page('view-loan-request');
 			} else {
 			  $("#warning-div").html('<div><i class="bi-exclamation-octagon-fill"></i></div> ' +message +" <br /><span>").fadeIn(500).delay(5000).fadeOut(100);
 				$("#submit_btn").html(btn_text);
@@ -280,7 +265,7 @@ function _get_fetch_repayment_schedule(transaction_id) {
 			  if (result == false) {
 				   $("#success-div").html('<div><i class="bi-check"></i></div> ' + message +" <br>" ).fadeIn(500).delay(5000).fadeOut(100);
 					_alert_close();
-					_get_page_with_id('repayment_schedule', transaction_id);
+					_get_page_with_id('repayment-schedule', transaction_id);
 			} else {
 			  	$("#warning-div").html('<div><i class="bi-exclamation-octagon-fill"></i></div> ' + message +" <br /><span>").fadeIn(500).delay(5000).fadeOut(100);
 				$("#submit_btn").html(btn_text);
@@ -293,7 +278,6 @@ function _get_fetch_repayment_schedule(transaction_id) {
 }
 
 function _get_sub_repayment_detail(transaction_id) {
-
 	var dataString = "transaction_id=" + transaction_id;
 	$.ajax({
 	  type: "POST",
@@ -358,7 +342,6 @@ function _get_sub_repayment_detail(transaction_id) {
 					'</tr>';
 			}
 			$('#fetch_all_repayment').html(text);	
-		
 	 } else {
 		// do nothing //
 	 }
